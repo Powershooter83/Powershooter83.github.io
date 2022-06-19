@@ -376,6 +376,12 @@ footer{
     .text_wrapper_2 h1, .text_wrapper_2 h2{
         font-size: 25px;
     }
+    #navbar #links a{
+        font-size: 20px;
+    }
+    header{
+        height: 50px;
+    }
 
 }
 
@@ -389,6 +395,9 @@ footer{
 }
 @media (max-height: 970px) {
 
+    #navbar #links a{
+        font-size: 30px;
+    }
     .text_wrapper_2 h1, .text_wrapper_2 h2{
         font-size: 30px;
         margin-top: 5px;
@@ -399,6 +408,9 @@ footer{
     .text_wrapper_2 h1, .text_wrapper_2 h2{
         font-size: 30px;
         margin-top: -1px;
+    }
+    #navbar #links a{
+        font-size: 25px;
     }
 }
 @media (max-height: 610px) {
