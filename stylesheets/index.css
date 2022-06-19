@@ -370,6 +370,47 @@ footer{
 }
 
 
+
+@media (max-height: 670px) {
+
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 25px;
+    }
+
+}
+
+@media (max-height: 1130px) {
+
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+}
+@media (max-height: 970px) {
+
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+}
+@media (max-height: 830px) {
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 30px;
+        margin-top: -1px;
+    }
+}
+@media (max-height: 610px) {
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 20px;
+    }
+}
+@media (max-height: 835px) {
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        margin-top: 1px;
+    }
+}
 @media (max-width: 365px) {
     #hallo{
         grid-column: 2/5;
