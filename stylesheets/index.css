@@ -277,7 +277,6 @@ footer{
     .text_wrapper{
         margin-top: -15px;
         grid-column: 1/10;
-        margin-left: 22vw;
     }
 
     #subtitle{
@@ -305,7 +304,6 @@ footer{
     .text_wrapper{
         margin-top: -15px;
         grid-column: 1/10;
-        margin-left: 22vw;
     }
 
     #subtitle{
@@ -318,5 +316,43 @@ footer{
         width: 70vw;
         height: 4vh;
         font-size: 30px;
+    }
+}
+@media (max-width: 365px) {
+    #hallo{
+        grid-column: 2/5;
+        font-size: 30px;
+    }
+    .text_wrapper p{
+        font-size: 30px;
+    }
+    .text_wrapper h1, .text_wrapper h2{
+        font-size: 30px;
+    }
+    .text_wrapper{
+        margin-top: -15px;
+        grid-column: 1/5;
+    }
+
+    #subtitle{
+        margin-top: -20px;
+        font-size: 20px;
+        grid-column: 2/5;
+    }
+    #about_me{
+        margin-top: 60px;
+        width: 70vw;
+        height: 4vh;
+        font-size: 30px;
+    }
+}
+@media (max-width: 1120px) {
+   .text_wrapper{
+       grid-column: 2/5;
+   }
+}
+@media (max-width: 480px) {
+    .text_wrapper{
+        grid-column: 2/6;
     }
 }
