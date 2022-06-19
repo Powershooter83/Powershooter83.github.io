@@ -30,6 +30,7 @@ header #navbar a{
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0 ,0);
     transition: border-bottom 300ms;
+    font-size: 40px;
 
 }
 
@@ -76,6 +77,7 @@ header #navbar #nav_home:hover{
 }
 
 #hallo{
+    font-size: 80px;
     grid-row: 1;
     grid-column: 2;
 }
@@ -102,12 +104,12 @@ footer{
 .wrapper, .title h1, .title h2{
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: bolder;
-    font-size: 70px;
+    font-size: 80px;
 }
 .title_2 h1, .title_2 h2{
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .text_wrapper{
@@ -138,12 +140,12 @@ footer{
 
 .title h1:hover{
     color: #006bb3;
-    font-size: 66px;
+    font-size: 76px;
     transform: rotate(-15deg);
 }
 .title_2 h1:hover{
     color: #006bb3;
-    font-size: 34px;
+    font-size: 76px;
     transform: rotate(-15deg);
 }
 .title_2 h2:hover{
