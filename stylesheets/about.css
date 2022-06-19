@@ -23,7 +23,7 @@ body{
 header #navbar a{
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: none;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -35,6 +35,58 @@ header #navbar a{
     transition: border-bottom 300ms;
 
 }
+
+
+.dropdown {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bolder;
+    margin-top: -10px;
+    float: left;
+    overflow: hidden;
+    z-index: 1000;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 80px;
+}
+#selected_home{
+    color: #05a9f0;
+}
+
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
 
 header #navbar a:hover {
     border-bottom: 2px solid #006bb3;;
@@ -172,6 +224,8 @@ footer{
     width: 100vw;
 }
 
+
+
 @media (max-width: 768px) {
     header #navbar{
         display: none;
@@ -240,5 +294,159 @@ footer{
 @media (max-width: 540px) {
     #text{
         height: 60vh;
+    }
+}
+
+
+@media (max-height: 670px) {
+
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 25px;
+    }
+    #navbar #links a{
+        font-size: 20px;
+    }
+    header{
+        height: 50px;
+    }
+
+}
+
+@media (max-height: 1130px) {
+
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-height: 812px) and (max-width: 375px) {
+    #hallo{
+        grid-column: 2/5;
+        font-size: 30px;
+    }
+    .text_wrapper p{
+        font-size: 30px;
+    }
+    .text_wrapper h1, .text_wrapper h2{
+        font-size: 30px;
+    }
+    .text_wrapper{
+        margin-top: -15px;
+        grid-column: 1/5;
+    }
+
+    #subtitle{
+        margin-top: -20px;
+        font-size: 20px;
+        grid-column: 2/5;
+    }
+    #about_me{
+        margin-top: 60px;
+        width: 70vw;
+        height: 4vh;
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-height: 1130px) and (max-width: 320px) {
+
+    #subtitle{
+        margin-top: 10px;
+    }
+}
+
+@media (max-height: 970px) {
+
+    #navbar #links a{
+        font-size: 30px;
+    }
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+}
+@media (max-height: 830px) {
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 30px;
+        margin-top: -1px;
+    }
+    #navbar #links a{
+        font-size: 25px;
+    }
+}
+@media (max-height: 610px) {
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        font-size: 20px;
+    }
+}
+@media (max-height: 835px) {
+    .text_wrapper_2 h1, .text_wrapper_2 h2{
+        margin-top: 1px;
+    }
+}
+@media (max-width: 365px) {
+    #hallo{
+        grid-column: 2/5;
+        font-size: 30px;
+    }
+    .text_wrapper p{
+        font-size: 30px;
+    }
+    .text_wrapper h1, .text_wrapper h2{
+        font-size: 30px;
+    }
+    .text_wrapper{
+        margin-top: -15px;
+        grid-column: 1/5;
+    }
+
+    #subtitle{
+        margin-top: -20px;
+        font-size: 20px;
+        grid-column: 2/5;
+    }
+    #about_me{
+        margin-top: 60px;
+        width: 70vw;
+        height: 4vh;
+        font-size: 30px;
+    }
+}
+@media (max-width: 1120px) {
+    .text_wrapper{
+        grid-column: 2/5;
+    }
+}
+@media (max-width: 480px) {
+    .text_wrapper{
+        grid-column: 2/6;
+    }
+}
+
+@media (max-width: 391px) {
+    .wrapper{
+        height: 10px;
+    }
+    footer{
+        display: none;
+    }
+    .wrapper #text{
+        height: 90%;
+    }
+}
+
+@media (max-width: 355px){
+    .wrapper #text p{
+        font-size: 20px;
+    }
+    .wrapper{
+        height: 100px;
+    }
+    .wrapper #text #title_me_text, .wrapper #text h1{
+        font-size: 30px;
     }
 }
