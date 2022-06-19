@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+body{
+    position: relative;
+}
+
+
+@media (min-width: 768px) {
+    header #navbar_mobile{
+        display: none;
+    }
+
+}
+header #navbar a{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+header #navbar a{
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0 ,0);
+    transition: border-bottom 300ms;
+
+}
+
+header #navbar a:hover {
+    border-bottom: 2px solid #006bb3;;
+}
+
+#nav_media:hover, #nav_home:hover{
+    color: #006bb3;
+}
+
+
+#links{
+    display: flex;
+    flex-direction: row;
+}
+
+header #navbar #nav_aboutme:hover{
+    border-bottom: 1px solid rgba(0, 0, 0 ,0);
+}
+#nav_home{
+    margin-left: 20px;
+    color: black;
+    margin-right: 50px;
+}
+#nav_aboutme{
+    color: #05a9f0;
+    margin-right: 50px;
+}
+#nav_media{
+    color: black;
+}
+
+
+.wrapper{
+    margin-top: 5vh;
+    margin-left: -10vw;
+    z-index: 999;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 6vh;
+}
+footer{
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    height: 1vh;   /* Height of the footer */
+}
+
+#navbar, #navbar_mobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-between;
+}
+
+.wrapper{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+.title_2 h1, .title_2 h2{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#title_me_text{
+    margin-left: 10px;
+    color: #05a9f0;
+}
+#title_me{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#text p{
+    margin-left: 10px;
+}
+#text:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#text{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+    margin-top: 10vh;
+    grid-column: 1/4;
+    height: 30vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#logo{
+    margin-left: 5vw;
+}
+.wrapper{
+    margin-left: 3vw;
+}
+
+
+.text_wrapper_2{
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    margin-top: 0.8vh;
+}
+
+.title_2{
+    display: flex;
+    flex-direction: row;
+}
+
+.title_2 h1:hover{
+    color: #006bb3;
+    font-size: 34px;
+    transform: rotate(-15deg);
+}
+.title_2 h2:hover{
+    color: #006bb3;
+    font-size: 34px;
+    transform: rotate(+15deg);
+}
+
+.title_2 h1, .title_2 h2, .title_2 h3{
+    color: #0099ff;
+}
+#particles-js{
+    margin-top: -20vh;
+    height: 110vh;
+    width: 100vw;
+}
+
+@media (max-width: 768px) {
+    header #navbar{
+        display: none;
+    }
+
+    #hallo{
+        font-size: 50px;
+    }
+
+
+    .title h2{
+        font-size: 50px;
+    }
+    .title h1{
+        font-size: 50px;
+    }
+
+    #about_me{
+        margin-top: 30px;
+        width: 60vw;
+        height: 5vh;
+    }
+    footer{
+        position:absolute;
+        bottom: 0;
+        width:100%;
+        height: 10vh;   /* Height of the footer */
+    }
+    body{
+        position: relative;
+    }
+}
+@media (max-width: 1500px) {
+    #text{
+        grid-column: 2/5;
+    }
+    #logo{
+        margin-left: 14vw;
+        margin-top: 4vh;
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+@media (max-width: 1385px) {
+    #logo{
+        margin-left: 10vw;
+    }
+}
+@media (max-width: 1000px) {
+    #logo{
+        margin-left: 15vw;
+    }
+    #logo img{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media (max-width: 730px) {
+    #logo{
+        display: none;
+    }
+    #text{
+        height: 40vh;
+    }
+}
+@media (max-width: 540px) {
+    #text{
+        height: 60vh;
+    }
+}
